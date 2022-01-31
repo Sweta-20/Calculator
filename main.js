@@ -1,21 +1,19 @@
+var text= document.getElementById('txt1');
 function dis(val) {
-    document.getElementById('txt1').value += val;
+    text.value += val;
 }
 function mod(val) {
-    document.getElementById('txt1').value += val;
+   text.value += val;
 }
 function solve() {
-    let x = document.getElementById('txt1').value;
-    let y = eval(x);
-    document.getElementById('txt1').value = y;
+    let x =text.value;
+    text.value = eval(x);
+   
 }
 function clr() {
-    document.getElementById('txt1').value = "";
+    text.value = "";
 }
-function add() {
-    var add = btnadd.value;
-    document.getElementById('txt1').value += add;
-}
+
 function displaytrig() {
     document.getElementById('btncos').style.display = "inline-block";
     document.getElementById('btnsine').style.display = "inline-block";
@@ -23,74 +21,73 @@ function displaytrig() {
 }
 
 function sqrt() {
-    document.getElementById('txt1').value = Math.sqrt(document.getElementById('txt1').value, 1 / 2)
+    text.value = Math.sqrt(text.value, 1 / 2)
 }
 function back() {
-    var value = document.getElementById("txt1").value;
-    document.getElementById("txt1").value = value.substr(0, value.length - 1);
+    var value = text.value;
+    text.value = value.substr(0, value.length - 1);
 }
 function pi() {
-    var pai = document.getElementById("txt1").value;
-    var paai = pai * 3.141;
-    document.getElementById("txt1").value = paai;
+    var pai = text.value;
+    text.value = pai * 3.141;
 }
 function logarithm() {
-    var logarit = document.getElementById("txt1").value;
-    var legit = Math.log10(logarit);
-    document.getElementById("txt1").value = legit;
+    var logarit = text.value;
+    text.value = Math.log10(logarit);
+   
 }
 function lan() {
-    var logarit = document.getElementById("txt1").value;
-    var legit = Math.log(logarit);
-    document.getElementById("txt1").value = legit;
+    var logarit = text.value;
+    text.value= Math.log(logarit);
+   
 }
 function square() {
-    var squared = document.getElementById("txt1").value;
-    var redeeemd = Math.pow(squared, 2);
-    document.getElementById("txt1").value = redeeemd;
+    var squared =text.value;
+    text.value = Math.pow(squared, 2);
+   
 }
 function exp() {
-    var ex = document.getElementById("txt1").value;
-    var redeeemd = Math.exp(ex);
-    document.getElementById("txt1").value = redeeemd;
+    var ex = text.value;
+    text.value= Math.exp(ex);
+    
 }
 
 function powfun() {
-    var p = document.getElementById("txt1").value;
-    var pow = Math.pow(p, 2);
-    document.getElementById("txt1").value = pow;
+    var p = text.value;
+    text.value = Math.pow(p, 2);
+    
 }
 function absfun() {
-    var a = document.getElementById("txt1").value;
-    var abs = Math.abs(a);
-    document.getElementById("txt1").value = abs;
+    var a =  text.value;
+    text.value= Math.abs(a);
+    
 }
 
 function cos() {
-    var trignometry = document.getElementById("txt1").value;
-    var result = Math.cos(trignometry);
-    document.getElementById("txt1").value = result;
+    var trignometry = text.value;
+    text.value = Math.cos(trignometry);
+    
 
 }
 function sine() {
-    var trignometry = document.getElementById("txt1").value;
-    var result = Math.sin(trignometry);
-    document.getElementById("txt1").value = result;
+    var trignometry =  text.value;
+    text.value = Math.sin(trignometry);
+
 }
 function tan() {
-    var trignometry = document.getElementById("txt1").value;
-    var result = Math.tan(trignometry);
-    document.getElementById("txt1").value = result;
+    var trignometry =  text.value;
+    text.value= Math.tan(trignometry);
+ 
 
 }
 function deg() {
-    var trignometry = document.getElementById("txt1").value;
-    document.getElementById("txt1").value = Math.tan(trignometry * (Math.PI / 180))
+    var trignometry =  text.value;
+    text.value = Math.tan(trignometry * (Math.PI / 180))
     //same for cos and tan
 }
 
 function fact() {
-    var n = document.getElementById("txt1").value;
+    var n =  text.value;
     let answer = 1;
     if (n == 0 || n == 1) {
         answer = 1;
@@ -101,32 +98,32 @@ function fact() {
 
     }
 
-    document.getElementById("txt1").value = answer;
+    text.value= answer;
 }
 
 function onebyX() {
-    var Res = eval('1/' + document.getElementById("txt1").value);
-    document.getElementById("txt1").value = Res;
+    var Res = eval('1/' +  text.value);
+    text.value = Res;
 }
 function e() {
-    document.getElementById("txt1").value = Math.E;
+    text.value = Math.E;
 
 }
 function plusminus() {
-     document.getElementById("txt1").value = 0 - document.getElementById("txt1").value;
+    text.value = 0 -  text.value;
 }
 var m = 0;
 function m() {
     var m = 0;
 }
 function mplus() {
-    m = m * 1 + document.getElementById("txt1").value * 1;
-    document.getElementById("txt1").value = m;
+    m = m * 1 +  text.value * 1;
+    text.value = m;
 }
 function mminus() {
-    m = m * 1 - document.getElementById("txt1").value * 1;
-    document.getElementById("txt1").value = m;
+    m = m * 1 -  text.value * 1;
+    text.value = m;
 }
 function mr() {
-    document.getElementById("txt1").value = m
+    text.value = m
 }
