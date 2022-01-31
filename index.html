@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Typescript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container - center" style="margin-left: 300px;">
+        <center>
+
+            <input type="text" readonly id="txt1">
+            <br>
+            <button id="degid" onclick="deg()" class="font">DEG</button>
+            <button id="idfe" class="font">FE</button>
+            <br>
+            <button id="idmc" onclick="" disabled>MC</button>
+            <button id="idmr" disabled>MR</button>
+            <button id="idm+" class="font" onclick="mplus()">M+</button>
+            <button id="idm-" class="font" onclick="mminus()">M-</button>
+            <button id="idms" class="font">MS</button>
+            <br>
+            <button type="button" onclick="displaytrig()" class="tri" value="Trignometry"
+                style="height: fit-content;width: fit-content;align-items: left;">Trigonometry<i
+                    class="fa fa-angle-down"></i></button>
+            <span style="font-style: italic;">f</span><button value="function" style="width: fit-content;">function <i
+                    class="fa fa-angle-down"></i></button>
+            <button id="btncos" value="cos" onclick="cos()" style="width:fit-content">cos</button>
+            <button id="btnsine" value="cos" onclick="sine()" style="width:fit-content">sine</button>
+            <button id="btntan" value="cos" onclick="tan()" style="width:fit-content">tan</button>
+
+            <br>
+            <button id="btn2nd">2<sup>nd</sup> </button>
+            <button id="btnpie" value="π" onclick="pi()">π</button>
+            <button id="btne" onclick="e()">e</button>
+            <button id="btnC" onclick="clr()">C</button>
+
+            <button id="btnCancel" value="&#xf55a;" onclick="back()"><i class="material-icons">backspace</i></button>
+            <br>
+            <button id="btnsq" value="x&#178;" onclick="square()">x&#178</button>
+            <button id="btnonebyx" onclick="onebyX()">1/x</button>
+            <button id="btnabs" onclick="absfun()">|x|</button>
+            <button id="btnexp" onclick="exp()">exp</button>
+            <button id="btnmod" onclick="mod('%')">mod</button>
+            <br>
+            <button id="btnX" onclick="sqrt()">&#178&#8730x</button>
+            <button id="btnopenbracket" value="(" onclick="dis('(')">(</button>
+            <button id="btnclosebraket" value=")" onclick="dis(')')">)</button>
+            <button id="btnnfact" value="n!" onclick="fact() ">n!</button>
+            <button id="btndivide" onclick="dis('/')">÷</button>
+            <br>
+            <button id="btnX" onclick="dis('**')">x <span
+                    style="position: relative; bottom: .4em; right: .1em;">y</span></button>
+            <button id="btnseven" value="7" onclick="dis('7')" class="font">7</button>
+            <button id="btneight" value="8" onclick="dis('8')" class="font">8</button>
+            <button id="btnnine" value="9" onclick="dis('9')" class="font">9</button>
+            <button id="btnmul" onclick="dis('*')">*</button>
+            <br>
+            <button id="btnten" onclick="dis('100')">10&#178</button>
+            <button id="btnfour" value="4" onclick="dis('4')" class="font">4</button>
+            <button id="btnfive" value="5" onclick="dis('5')" class="font">5</button>
+            <button id="btnsix" value="6" onclick="dis('6')" class="font">6</button>
+            <button id="btnminus" onclick="dis('-')">-</button>
+            <br>
+            <button id="btnlog" onclick="logarithm()">log</button>
+            <button id="btnone" value="1" onclick="dis('1')" class="font">1</button>
+            <button id="btntwo" value="2" onclick="dis('2')" class="font">2</button>
+            <button id="btnthree" value="3" onclick="dis('3')" class="font">3</button>
+            <button id="btnadd" value="+" onclick="dis('+')">+</button>
+            <br>
+            <button id="btnln" onclick="lan()">ln</button>
+            <button id="btnplusminus" onclick="plusminus()">+/-</button>
+            <button id="btnzero" class="font" value="0" onclick="dis('0')">0</button>
+            <button id="btndot">.</button>
+            <button id="btnequal" value="=" onclick="solve()">=</button>
+        </center>
+    </div>
+
+    <script src="calAssignment.js">
+    </script> 
+</body>
+
+</html>
